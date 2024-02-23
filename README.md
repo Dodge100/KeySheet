@@ -22,3 +22,6 @@ In a pinch? Use this <a href="https://docs.google.com/spreadsheets/d/1SwWzEClx_t
 3. In the new window, paste in the code from the <a href="https://github.com/Dodge100/KeySheet/blob/main/Code.gs">Code.gs</a> file.
 4. Then in the top right click Deploy > New Deployment > Deploy.
 5. Finally go back to the Google Sheet and go to Extensions > Macros > Import Macro. Check all of the functions and click apply.
+6. Set up your datasheet as follows - Columns B and C are for keys while Column D is for the data. You can add topics or labels in column A.
+
+If you have any questions, make an issue.
