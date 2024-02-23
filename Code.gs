@@ -1,5 +1,5 @@
 function onEdit(e) {
-  var dataSheetName = "dataSheet";
+  var dataSheetName = "dataSheet"; //Cchange the value in quotation marks to change the name of your sheet with the key and data values.
 
   // Check if the edited sheet is not the data sheet
   if (e.range.getSheet().getName() !== dataSheetName) {
@@ -8,6 +8,7 @@ function onEdit(e) {
   }
 }
 
+// Checks cells to see if they match with a key
 function replaceKeywords(activeSheet, dataSheetName) {
   var dataSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(dataSheetName);
 
@@ -27,6 +28,7 @@ function replaceKeywords(activeSheet, dataSheetName) {
   }
 }
 
+// Replaces with the correct data
 function searchDataInDataSheet(keyword, dataSheet) {
   var lastRow = dataSheet.getLastRow();
   var keywordColumn = dataSheet.getRange(1, 2, lastRow, 2).getValues(); // Assuming keywords are in column B and C
