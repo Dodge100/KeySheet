@@ -1,5 +1,5 @@
 function onEdit(e) {
-  var dataSheetName = "dataSheet"; //Cchange the value in quotation marks to change the name of your sheet with the key and data values.
+  var dataSheetName = "dataSheet"; //Change the value in quotation marks to change the name of your sheet with the key and data values.
 
   // Check if the edited sheet is not the data sheet
   if (e.range.getSheet().getName() !== dataSheetName) {
